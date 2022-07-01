@@ -25,7 +25,7 @@ async def strt(message: types.Message):
                                                       "To learn all the features of the bot type: /help\n\n"
                                                       f"Your user ID: {message.from_user.id}\n"
                                                       f"--------------------------------------------------------------------------\n\n"
-                                                      f"Добро пожаловть!\n"
+                                                      f"Добро пожаловать!\n"
                                                       f"Чтобы узнать все возможности бота наберите: /help")
     if db.db_user(message.from_user.id) == None:
         await db.db_add(message.from_user.id, message.from_user.first_name, message.from_user.last_name)
